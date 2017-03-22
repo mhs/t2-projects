@@ -54,11 +54,11 @@ module.exports = function(environment) {
   }
 
   if (environment === 'staging') {
-    ENV.apiHost = "http://t2api-staging.neo.com";
+    ENV.apiHost = "https://t2-api-staging.herokuapp.com";
   }
 
   if (environment === 'production') {
-    ENV.apiHost = "http://t2.neo.com";
+    ENV.apiHost = "https://t2-api.herokuapp.com";
   }
 
   return ENV;
